@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History | Calories Calculator </title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/src/css/main.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gray-900 ">
+    <div class="absolute top-2 right-4">
+      <div class="relative  top-2 w-20 h-20 bg-white bg-opacity-90 rounded-full flex justify-center items-center">
+        <a href="https://github.com/Vk2401/form-task/02-form-using-localStorage" class="select-none absolute top-3" title="Source code repo"  target="_blank" rel="noopener noreferrer"><img draggable="false" src="/images/GitHub-logo.png" alt="hgithub logo"></a>
+      </div>
+    </div>
+    <a href="./index.html" class="hover:text-red-400 absolute top-5 left-5 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20v-2z"/>
+      </svg> Back
+    </a>
+    <h1 class="text-center mt-32 md:mt-20 text-white font-bold text-4xl mb-5">History</h1>
+   
+    <div class="body-font flex justify-center text-white">
+       
+      <div id="historyTableContainer" class="top-5 md:overflow-hidden overflow-x-scroll text-gray-900 text-center">
+        <!-- Table Header -->
+        <table class="table overflow-hidden table-auto bg-white rounded-lg  border-gray-300">
+            <thead class="rounded-lg">
+              <tr>
+                <th class="py-2 px-4 border-b">Weight</th>
+                <th class="py-2 px-4 border-b">Height</th>
+                <th class="py-2 px-4 border-b">Age</th>
+                <th class="py-2 px-4 border-b">Activity Level</th>
+                <th class="py-2 px-4 border-b">Calories Result</th>
+                <th class="py-2 px-4 border-b">Date/Time</th>
+                <th class="py-2 px-4 border-b">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="rounded-lg">
+              <!-- Table Body Rows will be dynamically added here -->
+            </tbody>
+          </table>
+          
+      </div>
+    </div>
+    
+    <script type="module" src="./src/js/history.js"></script>
+  </body>
+</html>
