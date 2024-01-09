@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food List</title>
+
+  <!-- TailwindCSS -->
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div id="app">
+    <!-- title -->
+    <div class="text-center p-10">
+      <h1 class="font-bold text-4xl mb-4">Foods from Tamilnadu</h1>
+    </div>
+
+
+    <section id="foodContainer"
+      class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+      <div class="w-72 hidden bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="#">
+          <img src="./assets/img/briyani.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3 w-72">
+            <p class="text-lg font-bold text-black truncate block capitalize">Product Name</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">description</p>
+    
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+  </div>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
