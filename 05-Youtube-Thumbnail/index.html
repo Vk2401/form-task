@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thumbnail Downloder</title>
+
+  <!-- TailwindCSS -->
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div id="app" class="text-3xl bg-green-400 font-bold flex justify-center  h-screen w-screen">
+    <div class="flex flex-col justify-center items-center  ">
+      <h1 class="mb-5 text-white font-bold">Download Your Youtube Thumbnail !!</h1>
+      <form>
+        <div class="max-w-xl">
+
+          <div class="flex space-x-4">
+            <div class="flex rounded-md overflow-hidden w-full">
+              <input type="text" class="w-full rounded-md rounded-r-none outline-none pl-4 " autofocus
+                placeholder="Enter Video URL" />
+              <button class="bg-gray-800 text-white px-6 text-lg font-semibold py-4 rounded-r-md">Get</button>
+            </div>
+
+
+          </div>
+          <div class="hidden text-center w-full justify-center  items-center mt-4" id="errMess">
+
+            <p class="text-red-600 text-lg font-semibold flex justify-center " id="errMessTxt">Please enter something</p>
+          </div>
+        </div>
+      </form>
+      <div class="relative w-1/2 h-auto bg-white p-5 rounded-lg mt-12 text-center hidden" id="vdoPrev">
+        <img src="https://img.youtube.com/vi/7dSJubxFWv0/maxresdefault.jpg" id="thumbnailImg" alt="your thumbnail">
+        <a href="#" id="downloadBtn" target="_blank"><button
+            class="cursor-pointer px-10 py-2 mt-4 text-lg bg-red-600 hover:bg-red-700 rounded-lg text-white">Download</button></a>
+      </div>
+    </div>
+
+  </div>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
